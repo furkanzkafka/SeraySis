@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Stok Guncelleme";
+    @model SeraySis.Entities.StokKart
+
+}
+
+
+@Html.Partial("_UstSayfa")
+
+<div id="page-content">
+    <div class="row">
+
+
+
+        <div class="col-lg-12">
+            <div class="panel">
+
+
+                @using (Html.BeginForm("StokDuzenle", "Yonetim", FormMethod.Post, new { @class = "form-horizontal", @enctype = "multipart/form-data" }))
+                {
+
+                    @Html.ValidationSummary(false)
+
+                    if (ViewBag.SetLink != null)
+                    {
+                        <a href="#" class="message">@ViewBag.SetLink</a>
+                    }
+
+                    @Html.HiddenFor(model => model.Id)
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">KOD</label>
+                            <div class="col-sm-9">
+                                @Html.ValueFor(model => model.Kod)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Malzeme Tanım</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.MalzemeTanim, new { htmlAttributes = new { @class = "form-control", @id = "" } })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">KDV Oran</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.KdvOran, new { htmlAttributes = new { @class = "form-control", @id = "" } })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Birim Fiyat</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.BirimFiyat, new { htmlAttributes = new { @class = "form-control", @id = "" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Birim Fiyat</label>
+                            <div class="col-sm-9">
+                        @Html.DropDownList("BirimPara",
+                        new List<SelectListItem>{
+                     new SelectListItem {
+                        Text="₺ Turk Lirası",
+                        Value="₺",
+                        // Selected = true,
+                        // Disabled = true
+                     },
+                     new SelectListItem {
+                        Text="€ Euro",
+                        Value="€",
+
+                     },
+                     new SelectListItem {
+                        Text="$ Dolar",
+                        Value="$",
+
+                     },
+
+                 }, "Para Birimi", new { @class = "form-control" })
+                                
+                            </div>
+                        </div>
+
+                        
+                        
+                        <div class="panel-footer text-right">
+                            <button class="btn btn-success" type="submit">Güncelle</button>
+                        </div>
+            
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+        @Html.Partial("_AltSayfa")

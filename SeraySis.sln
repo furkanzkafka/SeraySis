@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeraySis,WebApp", "SeraySis\SeraySis,WebApp.csproj", "{79B4BF0E-82E9-445A-89EC-2A97711DEA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeraySis.Entities", "SeraySis.Entities\SeraySis.Entities.csproj", "{B374D759-3AFA-4301-97E7-1C8BE3D331DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeraySis.DAL", "SeraySis.DAL\SeraySis.DAL.csproj", "{A96BF256-2986-47C1-BEAE-023BA58F754F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeraySis.BLL", "SeraySis.BLL\SeraySis.BLL.csproj", "{F0A1ABBB-F274-44F7-A2B4-A4B2510B502F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeraySis.Core", "SeraySis.Core\SeraySis.Core.csproj", "{24883719-FC5C-4AFF-BE0F-32431D22C544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeraySis.Common", "SeraySis.Common\SeraySis.Common.csproj", "{9D8D564D-A466-4476-8E12-D37CAFC7A8EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79B4BF0E-82E9-445A-89EC-2A97711DEA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B4BF0E-82E9-445A-89EC-2A97711DEA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B4BF0E-82E9-445A-89EC-2A97711DEA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B4BF0E-82E9-445A-89EC-2A97711DEA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B374D759-3AFA-4301-97E7-1C8BE3D331DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B374D759-3AFA-4301-97E7-1C8BE3D331DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B374D759-3AFA-4301-97E7-1C8BE3D331DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B374D759-3AFA-4301-97E7-1C8BE3D331DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96BF256-2986-47C1-BEAE-023BA58F754F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96BF256-2986-47C1-BEAE-023BA58F754F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96BF256-2986-47C1-BEAE-023BA58F754F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96BF256-2986-47C1-BEAE-023BA58F754F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A1ABBB-F274-44F7-A2B4-A4B2510B502F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A1ABBB-F274-44F7-A2B4-A4B2510B502F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A1ABBB-F274-44F7-A2B4-A4B2510B502F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A1ABBB-F274-44F7-A2B4-A4B2510B502F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24883719-FC5C-4AFF-BE0F-32431D22C544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24883719-FC5C-4AFF-BE0F-32431D22C544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24883719-FC5C-4AFF-BE0F-32431D22C544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24883719-FC5C-4AFF-BE0F-32431D22C544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D8D564D-A466-4476-8E12-D37CAFC7A8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8D564D-A466-4476-8E12-D37CAFC7A8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D8D564D-A466-4476-8E12-D37CAFC7A8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D8D564D-A466-4476-8E12-D37CAFC7A8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34176E1A-DFA0-418B-95AF-500804C0D108}
+	EndGlobalSection
+EndGlobal

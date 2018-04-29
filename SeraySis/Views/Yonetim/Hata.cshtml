@@ -1,0 +1,23 @@
+﻿
+@Html.Partial("_UstSayfa")
+
+
+<div id="container" class="cls-container">
+
+    
+    <!-- CONTENT -->
+    <!--===================================================-->
+    <div class="cls-content">
+        <h1 class="error-code text-purple">500</h1>
+        <p class="h4 text-uppercase text-bold">Bir Hata Oluştu</p>
+        <div class="pad-btm">
+@TempData["LastError"].ToString()
+        </div>
+        <hr class="new-section-sm bord-no">
+        <div class="pad-top"><a class="btn btn-purple" href="/">Ana Sayfa</a></div>
+    </div>
+
+
+</div>
+
+@Html.Partial("_AltSayfa")

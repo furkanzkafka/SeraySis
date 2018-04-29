@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A96BF256-2986-47C1-BEAE-023BA58F754F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeraySis.DAL</RootNamespace>
+    <AssemblyName>SeraySis.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityFramework\DatabaseContext.cs" />
+    <Compile Include="EntityFramework\MyInitializer.cs" />
+    <Compile Include="EntityFramework\Repository.cs" />
+    <Compile Include="EntityFramework\RepositoyBase.cs" />
+    <Compile Include="Migrations\201802151430426_InitialCreate.cs" />
+    <Compile Include="Migrations\201802151430426_InitialCreate.Designer.cs">
+      <DependentUpon>201802151430426_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191113242_stokkart.cs" />
+    <Compile Include="Migrations\201802191113242_stokkart.Designer.cs">
+      <DependentUpon>201802191113242_stokkart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191125590_stokkart-yeni.cs" />
+    <Compile Include="Migrations\201802191125590_stokkart-yeni.Designer.cs">
+      <DependentUpon>201802191125590_stokkart-yeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191143037_stokkart-son.cs" />
+    <Compile Include="Migrations\201802191143037_stokkart-son.Designer.cs">
+      <DependentUpon>201802191143037_stokkart-son.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191307372_stokkart-yeter.cs" />
+    <Compile Include="Migrations\201802191307372_stokkart-yeter.Designer.cs">
+      <DependentUpon>201802191307372_stokkart-yeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191315567_stokkart-id-sil.cs" />
+    <Compile Include="Migrations\201802191315567_stokkart-id-sil.Designer.cs">
+      <DependentUpon>201802191315567_stokkart-id-sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191317457_stokkart-id-ekle.cs" />
+    <Compile Include="Migrations\201802191317457_stokkart-id-ekle.Designer.cs">
+      <DependentUpon>201802191317457_stokkart-id-ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802191353080_stokkart-id-duzelt.cs" />
+    <Compile Include="Migrations\201802191353080_stokkart-id-duzelt.Designer.cs">
+      <DependentUpon>201802191353080_stokkart-id-duzelt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802201425147_ekledairevebirim.cs" />
+    <Compile Include="Migrations\201802201425147_ekledairevebirim.Designer.cs">
+      <DependentUpon>201802201425147_ekledairevebirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802211052123_kod-kaldir.cs" />
+    <Compile Include="Migrations\201802211052123_kod-kaldir.Designer.cs">
+      <DependentUpon>201802211052123_kod-kaldir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802211056146_kod-ekle.cs" />
+    <Compile Include="Migrations\201802211056146_kod-ekle.Designer.cs">
+      <DependentUpon>201802211056146_kod-ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802212219074_faturakod-ekle.cs" />
+    <Compile Include="Migrations\201802212219074_faturakod-ekle.Designer.cs">
+      <DependentUpon>201802212219074_faturakod-ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802220032334_stok-kontrol.cs" />
+    <Compile Include="Migrations\201802220032334_stok-kontrol.Designer.cs">
+      <DependentUpon>201802220032334_stok-kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802220039333_rapor-kontrol.cs" />
+    <Compile Include="Migrations\201802220039333_rapor-kontrol.Designer.cs">
+      <DependentUpon>201802220039333_rapor-kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802222252079_veli-abi.cs" />
+    <Compile Include="Migrations\201802222252079_veli-abi.Designer.cs">
+      <DependentUpon>201802222252079_veli-abi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802222311455_fatura-tarih.cs" />
+    <Compile Include="Migrations\201802222311455_fatura-tarih.Designer.cs">
+      <DependentUpon>201802222311455_fatura-tarih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802222348144_currency.cs" />
+    <Compile Include="Migrations\201802222348144_currency.Designer.cs">
+      <DependentUpon>201802222348144_currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeraySis.Common\SeraySis.Common.csproj">
+      <Project>{9d8d564d-a466-4476-8e12-d37cafc7a8eb}</Project>
+      <Name>SeraySis.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeraySis.Core\SeraySis.Core.csproj">
+      <Project>{24883719-fc5c-4aff-be0f-32431d22c544}</Project>
+      <Name>SeraySis.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeraySis.Entities\SeraySis.Entities.csproj">
+      <Project>{b374d759-3afa-4301-97e7-1c8be3d331dc}</Project>
+      <Name>SeraySis.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802151430426_InitialCreate.resx">
+      <DependentUpon>201802151430426_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191113242_stokkart.resx">
+      <DependentUpon>201802191113242_stokkart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191125590_stokkart-yeni.resx">
+      <DependentUpon>201802191125590_stokkart-yeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191143037_stokkart-son.resx">
+      <DependentUpon>201802191143037_stokkart-son.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191307372_stokkart-yeter.resx">
+      <DependentUpon>201802191307372_stokkart-yeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191315567_stokkart-id-sil.resx">
+      <DependentUpon>201802191315567_stokkart-id-sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191317457_stokkart-id-ekle.resx">
+      <DependentUpon>201802191317457_stokkart-id-ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802191353080_stokkart-id-duzelt.resx">
+      <DependentUpon>201802191353080_stokkart-id-duzelt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201425147_ekledairevebirim.resx">
+      <DependentUpon>201802201425147_ekledairevebirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802211052123_kod-kaldir.resx">
+      <DependentUpon>201802211052123_kod-kaldir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802211056146_kod-ekle.resx">
+      <DependentUpon>201802211056146_kod-ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802212219074_faturakod-ekle.resx">
+      <DependentUpon>201802212219074_faturakod-ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802220032334_stok-kontrol.resx">
+      <DependentUpon>201802220032334_stok-kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802220039333_rapor-kontrol.resx">
+      <DependentUpon>201802220039333_rapor-kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222252079_veli-abi.resx">
+      <DependentUpon>201802222252079_veli-abi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222311455_fatura-tarih.resx">
+      <DependentUpon>201802222311455_fatura-tarih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222348144_currency.resx">
+      <DependentUpon>201802222348144_currency.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

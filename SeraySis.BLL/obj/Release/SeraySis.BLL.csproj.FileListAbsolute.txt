@@ -1,0 +1,17 @@
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.BLL.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.BLL.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.Common.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.Core.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.DAL.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.Entities.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\EntityFramework.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.Common.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.Core.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.DAL.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.DAL.dll.config
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\SeraySis.Entities.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\bin\Release\EntityFramework.xml
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\obj\Release\SeraySis.BLL.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\obj\Release\SeraySis.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\obj\Release\SeraySis.BLL.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.BLL\obj\Release\SeraySis.BLL.pdb

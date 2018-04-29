@@ -1,0 +1,8 @@
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\bin\Release\SeraySis.Common.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\bin\Release\SeraySis.Common.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\bin\Release\SeraySis.Entities.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\bin\Release\SeraySis.Entities.pdb
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\obj\Release\SeraySis.Common.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\obj\Release\SeraySis.Common.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\obj\Release\SeraySis.Common.dll
+C:\Users\ASUS\source\repos\SeraySis\SeraySis.Common\obj\Release\SeraySis.Common.pdb

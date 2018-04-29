@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://www.doktriner.com/seray.doktriner.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>08/15/2017 13:12:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 11:08:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/SeraySis.BLL.dll">
+      <publishTime>02/24/2018 02:42:54</publishTime>
+    </File>
+    <File Include="bin/SeraySis.BLL.pdb">
+      <publishTime>02/24/2018 02:42:54</publishTime>
+    </File>
+    <File Include="bin/SeraySis.Common.dll">
+      <publishTime>02/24/2018 02:42:52</publishTime>
+    </File>
+    <File Include="bin/SeraySis.Common.pdb">
+      <publishTime>02/24/2018 02:42:52</publishTime>
+    </File>
+    <File Include="bin/SeraySis.Core.dll">
+      <publishTime>02/24/2018 02:42:51</publishTime>
+    </File>
+    <File Include="bin/SeraySis.Core.pdb">
+      <publishTime>02/24/2018 02:42:51</publishTime>
+    </File>
+    <File Include="bin/SeraySis.DAL.dll">
+      <publishTime>02/24/2018 02:42:54</publishTime>
+    </File>
+    <File Include="bin/SeraySis.DAL.dll.config">
+      <publishTime>02/15/2018 15:50:11</publishTime>
+    </File>
+    <File Include="bin/SeraySis.DAL.pdb">
+      <publishTime>02/24/2018 02:42:54</publishTime>
+    </File>
+    <File Include="bin/SeraySis.dll">
+      <publishTime>02/24/2018 02:43:01</publishTime>
+    </File>
+    <File Include="bin/SeraySis.Entities.dll">
+      <publishTime>02/24/2018 02:42:51</publishTime>
+    </File>
+    <File Include="bin/SeraySis.Entities.pdb">
+      <publishTime>02/24/2018 02:42:51</publishTime>
+    </File>
+    <File Include="bin/SeraySis.pdb">
+      <publishTime>02/24/2018 02:43:01</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/15/2018 15:33:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/24/2018 02:44:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

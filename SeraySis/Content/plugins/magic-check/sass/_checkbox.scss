@@ -1,0 +1,24 @@
+.magic-checkbox+label {
+    &:before {
+        border-radius: 2px;
+    }
+    &:after {
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        box-sizing: border-box;
+        height: 13px;
+        left: 6px;
+        top: 0;
+        transform: rotate(48deg);
+        width: 6px;
+    }
+}
+
+.magic-checkbox:checked+label {
+    &:before {
+        background: $magic-main-color;
+        border: $magic-main-color;
+    }
+}
+

@@ -1,0 +1,5 @@
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Entities\bin\Debug\SeraySis.Entities.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Entities\bin\Debug\SeraySis.Entities.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Entities\obj\Debug\SeraySis.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Entities\obj\Debug\SeraySis.Entities.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Entities\obj\Debug\SeraySis.Entities.pdb

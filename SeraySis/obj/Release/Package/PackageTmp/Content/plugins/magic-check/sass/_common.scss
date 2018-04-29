@@ -1,0 +1,130 @@
+@keyframes hover-color {
+    from {
+        border-color: $magic-border-color;
+    }
+    to {
+        border-color: $magic-main-color;
+    }
+}
+
+.magic-radio,
+.magic-checkbox {
+    position: absolute;
+    z-index: -50
+}
+
+.magic-radio[disabled],
+.magic-checkbox[disabled] {
+    cursor: not-allowed;
+}
+
+.input-group-addon {
+    >.magic-radio+label,
+    >.magic-checkbox+label {
+        vertical-align: text-top;
+        &:before{
+            left: 0
+        }
+    }
+}
+
+.magic-radio+label,
+.magic-checkbox+label {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    min-width: 1.34em;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    &:hover {
+        &:before {
+            animation-duration: 0.3s;
+            animation-fill-mode: both;
+            animation-name: hover-color;
+        }
+    }
+    &:before {
+        border: 1px solid $magic-border-color;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .07);
+        content: '';
+        display: block;
+        height: $magic-checkbox-size;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: box-shadow .3s;
+        width: $magic-checkbox-size;
+    }
+    &:after {
+        content: '';
+        display: none;
+        position: absolute;
+    }
+
+}
+
+
+.magic-radio+label,
+.magic-checkbox+label{
+    &:not(:empty) {
+        margin: 0 5px 0 0;
+        text-indent: 25px;
+    }
+}
+
+.magic-checkbox+label {
+    min-height: $magic-checkbox-size;
+    min-width: $magic-checkbox-size;
+}
+
+.btn-group {
+    .magic-radio+label,
+    .magic-checkbox+label {
+        min-height: 1em;
+        vertical-align: baseline;
+    }
+}
+
+.magic-radio[disabled]+label,
+.magic-checkbox[disabled]+label {
+    cursor: not-allowed;
+    opacity: .5;
+    &:hover,
+    &:before,
+    &:after {
+        cursor: not-allowed;
+    }
+    &:hover {
+        &:before {
+            animation-name: none;
+        }
+    }
+}
+
+.magic-radio:checked+label,
+.magic-checkbox:checked+label {
+    &:before {
+        animation-name: none;
+    }
+    &:after {
+        display: block;
+    }
+}
+
+
+@if $material {
+    .magic-radio:focus+label,
+    .magic-checkbox:focus+label {
+        &:before{
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, .1), inset 0 0 0 10px rgba(0, 0, 0, .1);
+            transition: box-shadow .1s;
+        }
+    }
+    .magic-radio:checked:focus+label,
+    .magic-checkbox:checked:focus+label{
+        &:before{
+            box-shadow: 0 0 0 10px rgba(22, 119, 179, 0.17), inset 0 0 0 10px rgba(22, 119, 179, 0.17);
+        }
+    }
+}

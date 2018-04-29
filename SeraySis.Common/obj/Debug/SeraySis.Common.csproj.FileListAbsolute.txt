@@ -1,0 +1,8 @@
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\bin\Debug\SeraySis.Common.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\bin\Debug\SeraySis.Common.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\bin\Debug\SeraySis.Entities.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\bin\Debug\SeraySis.Entities.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\obj\Debug\SeraySis.Common.csprojResolveAssemblyReference.cache
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\obj\Debug\SeraySis.Common.csproj.CoreCompileInputs.cache
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\obj\Debug\SeraySis.Common.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Common\obj\Debug\SeraySis.Common.pdb

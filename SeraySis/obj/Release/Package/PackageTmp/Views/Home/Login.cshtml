@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Seray Giris";
+}
+
+@using SeraySis.Entities.ValueObjects
+@model LoginVM
+
+
+<div id="container" class="cls-container">
+
+    <!-- BACKGROUND IMAGE -->
+    <!--===================================================-->
+    <div id="bg-overlay"></div>
+
+
+    <!-- LOGIN FORM -->
+    <!--===================================================-->
+    <div class="cls-content">
+        <div class="cls-content-sm panel">
+            <div class="panel-body">
+                <div class="mar-ver pad-btm">
+                    <h1 class="h3">Seray</h1>
+                    <p>Giriş Paneli</p>
+                </div>
+                @using (Html.BeginForm())
+                {
+
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(false)
+
+                    if (ViewBag.SetLink != null)
+                    {
+                        <a href="#" class="message">@ViewBag.SetLink</a>
+                    }
+
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.Username, new { @class="form-control", type = "text" , placeholder = "Kullanici Adi" })
+                       </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control",placeholder = "Şifreniz", type = "password" })
+                       </div>
+                    <div class="checkbox pad-btm text-left">
+                        <input id="demo-form-checkbox" class="magic-checkbox" type="checkbox">
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Giriş</button>
+                }
+            </div>
+        </div>
+    </div>
+    <!--===================================================-->
+    <!-- DEMO PURPOSE ONLY -->
+    <!--===================================================-->
+    <!--===================================================-->
+
+
+
+</div>
+<!--===================================================-->
+<!-- END OF CONTAINER -->

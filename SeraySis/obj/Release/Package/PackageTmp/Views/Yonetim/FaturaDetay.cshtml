@@ -1,0 +1,176 @@
+﻿@{
+    ViewBag.Title = "Fatura Detay";
+    @model SeraySis.Entities.Rapor
+
+}
+
+@Html.Partial("_UstSayfa")
+
+
+<div id="page-content">
+
+    <div class="panel no-print">
+        <div class="panel-body">
+            <div class="invoice-masthead">
+                <div class="invoice-text">
+                    <h3 class="h1 text-uppercase text-thin mar-no text-primary">FATURALANDIRMA</h3>
+                </div>
+                <div class="invoice-brand" style="white-space:nowrap">
+                    <div class="invoice-logo">
+                        <img src="~/Content/images/seray-logo.jpg" height="60" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="invoice-bill row">
+                <div class="col-sm-6 text-xs-center">
+                    <address>
+                        <strong class="text-main">@Model.FirmaAdi</strong><br>
+                        @Model.Adres<br>
+                        @Model.VergiDairesi - @Model.VergiNo
+                    </address>
+                </div>
+                <div class="col-sm-6 text-xs-center">
+                    <table class="invoice-details">
+                        <tbody>
+                            <tr>
+                                <td class="text-main text-bold">Fatura Kodu #</td>
+                                <td class="text-right text-primary text-bold">@Model.FaturaKod</td>
+                            </tr>
+                            <tr>
+                                <td class="text-main text-bold">Fatura Tarihi</td>
+                                <td class="text-right">@Model.FaturaTarih.ToString("d")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr class="new-section-sm bord-no">
+
+            <div class="row">
+                <div class="col-lg-12 table-responsive">
+                    <table class="table table-bordered invoice-summary">
+                        <thead>
+                            <tr class="bg-gray">
+                                <th class="text-uppercase">Malzeme Tanımı</th>
+                                <th class="min-col text-center text-uppercase">BİRİM FİYAT</th>
+                                <th class="min-col text-center text-uppercase">LİTRE</th>
+                                <th class="min-col text-right text-uppercase">NET TUTAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>@Model.StokKart.MalzemeTanim</strong>
+                                </td>
+                                <td class="text-center"> @Model.StokKart.BirimFiyat  @Model.StokKart.BirimPara</td>
+                                <td class="text-center">@Model.MiktarLitre</td>
+                                <td class="text-right">@Model.NetTutar @Model.StokKart.BirimPara</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <table class="table invoice-total">
+                    <tbody>
+                        <tr>
+                            <td><strong>(%@Model.StokKart.KdvOran) KDV :</strong></td>
+                            <td>@Model.KdvliTutar @Model.StokKart.BirimPara</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Toplam Tutar :</strong></td>
+                            <td class="text-bold h4">@Model.ToplamTutar @Model.StokKart.BirimPara</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-right no-print">
+                <a href="javascript:window.print()" class="btn btn-default"><i class="demo-pli-printer icon-lg"></i></a>
+                
+            </div>
+            <hr class="new-section-sm bord-no">
+        </div>
+    </div>
+
+    <style>
+        .print-deneme {
+            display: none;
+        }
+
+
+        @@media {
+            .print-deneme {
+                display: block;
+                width: 58mm;
+                height: 70mm;
+                margin: 0;
+                padding: 0;
+                margin-left:10px;
+            }
+
+            .print-content {
+            }
+
+            .print-content-icerik {
+                margin: 0;
+            }
+        }
+    </style>
+
+    
+
+        <div class="print-deneme">
+            <div align="center" class="print-content">
+                <img src="~/Content/images/seray-logo.jpg" height="200" />
+                <p class="print-content-icerik">@Model.FaturaTarih.ToString("d")</p><br />
+                <p class="print-content-icerik">Κωδικος τιμολογιου : @Model.FaturaKod</p><br />
+                <div class="text-left">
+                    <p class="print-content-icerik">@Model.FirmaAdi</p>
+                    <p class="print-content-icerik">@Model.Adres</p>
+                    <p class="print-content-icerik">@Model.VergiDairesi - @Model.VergiNo</p><br />
+                </div>
+            <table style="width:100%">
+                <tr style="width:33%">
+                    <td>Tιμή μονάδας</td>
+                    <td align="center">:</td>
+                    <td>@Model.StokKart.MalzemeTanim</td>
+                </tr>
+                <tr style="width:33%">
+                    <td>Ποσότητα </td>
+                    <td align="center">:</td>
+                    <td>@Model.StokKart.BirimFiyat @Model.StokKart.BirimPara</td>
+                </tr>
+                <tr style="width:33%">
+                    <td>Λίτρο </td>
+                    <td align="center">:</td>
+                    <td>@Model.MiktarLitre</td>
+                </tr>
+                <tr style="width:33%">
+                    <td>Kαθαρό ποσό</td>
+                    <td align="center">:</td>
+                    <td>@Model.NetTutar @Model.StokKart.BirimPara</td>
+                </tr>
+                <tr style="width:33%">
+                    <td>ΦΠΑ(%@Model.StokKart.KdvOran)</td>
+                    <td align="center">:</td>
+                    <td>@Model.KdvliTutar @Model.StokKart.BirimPara</td>
+                </tr>
+                <tr style="width:33%">
+                    <td>Σύνολο</td>
+                    <td align="center">:</td>
+                    <td>@Model.ToplamTutar @Model.StokKart.BirimPara</td>
+                </tr>
+        </table>
+                <br />
+                <p class="print-content-icerik">ΣΑΣ ΕΥΧΑΡΙΣΤΟΥΜΕ - ΚΑΛΟ ΤΑΞΙΔΙ</p>
+            </div>
+        </div>
+
+</div>
+
+
+@Html.Partial("_AltSayfa")

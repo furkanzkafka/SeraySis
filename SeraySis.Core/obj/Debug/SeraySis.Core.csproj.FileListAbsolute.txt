@@ -1,0 +1,5 @@
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Core\bin\Debug\SeraySis.Core.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Core\bin\Debug\SeraySis.Core.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Core\obj\Debug\SeraySis.Core.csproj.CoreCompileInputs.cache
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Core\obj\Debug\SeraySis.Core.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.Core\obj\Debug\SeraySis.Core.pdb

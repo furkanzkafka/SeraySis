@@ -1,0 +1,17 @@
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.BLL.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.BLL.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.Common.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.Core.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.DAL.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.Entities.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.Common.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.Core.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.DAL.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.DAL.dll.config
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\SeraySis.Entities.pdb
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\obj\Debug\SeraySis.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\obj\Debug\SeraySis.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\obj\Debug\SeraySis.BLL.dll
+C:\Users\Rustem\Documents\GitHub\SeraySis\SeraySis.BLL\obj\Debug\SeraySis.BLL.pdb
